@@ -4,7 +4,6 @@ layout: default
 
 # Blog Posts
 
-{% raw %}
 {% if site.posts.size > 0 %}
 <ul>
 {% for post in site.posts %}
@@ -17,7 +16,6 @@ layout: default
 {% else %}
 No posts found.
 {% endif %}
-{% endraw %}
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.
 
