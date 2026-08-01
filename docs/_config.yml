@@ -21,15 +21,13 @@
 title: Techie.Work
 email: Techie.Work@Outlook.com
 description: "Techie.Work : Code. Build. Run. Deliver. Results that drive your business."
-baseurl: "/techiework-ai"
+baseurl: ""
 
-
+theme: jekyll-theme-architect
 url: "https://techiework-ai.github.io"
-twitter_username: jekyllrb
 github_username:  techiework-ai
 
 # Build settings
-theme: jekyll-theme-architect
 #remote_theme: pages-themes/architect
 #plugins:
 #  - jekyll-remote-theme
