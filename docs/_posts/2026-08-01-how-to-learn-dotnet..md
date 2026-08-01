@@ -1,22 +1,12 @@
 ---
-layout: post
-title: "How to Learn .NET in 2026"
-date: 2026-08-01
-tags:
-  - csharp
-  - aspnet
-  - backend
+layout: default
+title: Posts
 ---
 
-# How to Learn .NET
+# Posts
 
-This is my first technical article.
-
-## Topics
-
-- C#
-- ASP.NET Core
-- Entity Framework
-- Azure
-
-Happy Coding 🚀
+{% raw %}
+{% for post in site.posts %}
+- <a href="{{ post.url }}">{{ post.title }}</a>
+{% endfor %}
+{% endraw %}
