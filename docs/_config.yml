@@ -26,14 +26,14 @@ baseurl: "/techiework-ai"
 
 url: "https://techiework-ai.github.io"
 twitter_username: jekyllrb
-github_username:  jekyll
+github_username:  techiework-ai
 
 # Build settings
-#theme: minima
-remote_theme: pages-themes/architect
-plugins:
-  - jekyll-remote-theme
-  - jekyll-feed
+theme: jekyll-theme-architect
+#remote_theme: pages-themes/architect
+#plugins:
+#  - jekyll-remote-theme
+#  - jekyll-feed
 
 # Exclude from processing.
 # The following items will not be processed, by default.
