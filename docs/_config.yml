@@ -20,11 +20,11 @@
 
 title: Techie.Work
 email: Techie.Work@Outlook.com
-description: Techie.Work : Code. Build. Run. Deliver. Results that drive your business.
-baseurl: /techiework-ai.github.io/
+description: "Techie.Work : Code. Build. Run. Deliver. Results that drive your business."
+baseurl: "/techiework-ai"
 
 
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://techiework-ai.github.io"
 twitter_username: jekyllrb
 github_username:  jekyll
 
