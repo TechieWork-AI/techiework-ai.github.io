@@ -27,7 +27,7 @@ theme: jekyll-theme-architect
 url: "https://techiework-ai.github.io"
 github_username:  techiework-ai
 
-permalink: /blog/:categories/:title/
+permalink: /blog/:categories/:year/:month/:day/:title/
 
 # Build settings
 #remote_theme: pages-themes/architect
