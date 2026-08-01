@@ -1,12 +1,9 @@
 ---
-layout: default
-title: Posts
+layout: post
+title: "How to Learn .NET"
+date: 2026-08-01
 ---
 
-# Posts
+# How to Learn .NET
 
-{% raw %}
-{% for post in site.posts %}
-- <a href="{{ post.url }}">{{ post.title }}</a>
-{% endfor %}
-{% endraw %}
+My first article.
