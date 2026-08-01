@@ -2,7 +2,6 @@
 layout: post
 title: "How to Learn .NET in 2026"
 date: 2026-08-01
-categories: dotnet
 tags:
   - csharp
   - aspnet
