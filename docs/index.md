@@ -2,9 +2,17 @@
 layout: default
 ---
 
+Latest Articles
+
+{% raw %}
+{% for post in site.posts %}
+- [{{ post.title }}]({{ post.url }}) - {{ post.date | date: "%d %b %Y" }}
+{% endfor %}
+{% endraw %}
+
 Text can be **bold**, _italic_, or ~~strikethrough~~.
 
-[Link to another page](./another-page.html).
+[Link to another page](./another-file.html).
 
 There should be whitespace between paragraphs.
 
