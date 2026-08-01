@@ -2,12 +2,21 @@
 layout: default
 ---
 
-Latest Articles
+# Blog Posts
 
 {% raw %}
+{% if site.posts.size > 0 %}
+<ul>
 {% for post in site.posts %}
-- [{{ post.title }}]({{ post.url }}) - {{ post.date | date: "%d %b %Y" }}
+  <li>
+    <a href="{{ post.url }}">{{ post.title }}</a>
+    ({{ post.date | date: "%Y-%m-%d" }})
+  </li>
 {% endfor %}
+</ul>
+{% else %}
+No posts found.
+{% endif %}
 {% endraw %}
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.
