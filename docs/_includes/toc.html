@@ -1,0 +1,30 @@
+<nav class="post-toc" aria-label="Table of contents">
+  <h3>On this page</h3>
+  <ul></ul>
+</nav>
+
+<script>
+(function(){
+  try{
+    var toc = document.currentScript.previousElementSibling;
+    var content = document.querySelector('.page__content');
+    if(!content) { toc.style.display='none'; return; }
+    var headings = content.querySelectorAll('h2, h3');
+    if(!headings.length){ toc.style.display='none'; return; }
+    var ul = toc.querySelector('ul');
+    headings.forEach(function(h){
+      if(!h.id){
+        var id = h.textContent.trim().toLowerCase().replace(/[^a-z0-9\s-]/g,'').replace(/\s+/g,'-');
+        h.id = id;
+      }
+      var li = document.createElement('li');
+      li.className = h.tagName.toLowerCase();
+      var a = document.createElement('a');
+      a.href = '#'+h.id;
+      a.textContent = h.textContent;
+      li.appendChild(a);
+      ul.appendChild(li);
+    });
+  }catch(e){console.warn('TOC build failed', e);} 
+})();
+</script>

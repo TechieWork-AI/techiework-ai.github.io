@@ -6,7 +6,15 @@ layout: default
 
 <p class="date">
   📅 {{ page.date | date: "%d %B %Y" }}
+  {% comment %} Reading time calculated as words/200 rounded up {% endcomment %}
+  {% assign words = content | strip_html | strip_newlines | replace: '\r', ' ' | replace: '\n', ' ' | replace: '\t', ' ' | replace: '  ', ' ' | split: ' ' | size %}
+  {% assign reading_minutes = words | plus:199 | divided_by:200 %}
+  <span class="reading-time"> • {{ reading_minutes }} min read</span>
 </p>
+
+{% if page.toc %}
+  {% include toc.html %}
+{% endif %}
 
 <hr>
 

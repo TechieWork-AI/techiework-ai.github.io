@@ -30,7 +30,7 @@ author_profile: false
 </div>
 
 <div class="card-grid">
-  {% for post in site.posts %}
+  {% for post in paginator.posts %}
     <article class="info-card">
       <p class="post-card__meta">{{ post.date | date: "%b %d, %Y" }}</p>
       <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
@@ -38,3 +38,13 @@ author_profile: false
     </article>
   {% endfor %}
 </div>
+
+<nav class="pagination" role="navigation">
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path | relative_url }}" class="prev">Previous</a>
+  {% endif %}
+  <span class="page-num">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path | relative_url }}" class="next">Next</a>
+  {% endif %}
+</nav>

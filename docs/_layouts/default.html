@@ -4,21 +4,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ page.title | default: site.title }}</title>
+    {% seo %}
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
   </head>
   <body>
     <div class="page-shell">
-      <header class="site-header">
-        <a class="brand" href="{{ '/' | relative_url }}">Techie.Work</a>
-        <nav class="site-nav">
-          <a href="{{ '/' | relative_url }}">Home</a>
-          <a href="{{ '/blog/' | relative_url }}">Blog</a>
-          <a href="{{ '/categories/ai/' | relative_url }}">AI</a>
-          <a href="{{ '/categories/dotnet/' | relative_url }}">.NET</a>
-          <a href="{{ '/categories/azure/' | relative_url }}">Azure</a>
-        </nav>
-        {% include theme-toggle.html %}
-      </header>
+      {% include site-header.html %}
 
       <main class="page-content">
         {% if page.layout == "home" %}

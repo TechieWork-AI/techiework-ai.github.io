@@ -1,0 +1,12 @@
+<header class="site-header">
+  <a class="brand" href="{{ '/' | relative_url }}">Techie.Work</a>
+  <nav class="site-nav">
+    <a href="{{ '/' | relative_url }}">Home</a>
+    <a href="{{ '/blog/' | relative_url }}">Blog</a>
+    <a href="{{ '/categories/ai/' | relative_url }}">AI</a>
+    <a href="{{ '/categories/dotnet/' | relative_url }}">.NET</a>
+    <a href="{{ '/categories/azure/' | relative_url }}">Azure</a>
+  </nav>
+  {% include search.html %}
+  {% include theme-toggle.html %}
+</header>
