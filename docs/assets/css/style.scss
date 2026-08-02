@@ -91,7 +91,7 @@ body {
 /* Page grid with left sidebar */
 .page-grid{
   display:grid;
-  grid-template-columns: 220px 1fr;
+  grid-template-columns: minmax(220px, 240px) 1fr;
   gap: 2rem;
   align-items:start;
   margin-top: 1rem;
@@ -104,17 +104,23 @@ body {
 .sidebar{
   position: sticky;
   top: 20px;
+  padding: 1rem 1.15rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 1rem;
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.04);
 }
 
 .sidebar .tags,
 .sidebar ul{
   margin: 0;
-  padding-left: 0.6rem;
+  padding-left: 0.75rem;
 }
 
 .sidebar h2{
   font-size: 0.95rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.8rem;
+  letter-spacing: 0.03em;
 }
 
 /* Sidebar list styles to match screenshot */
@@ -125,9 +131,24 @@ body {
 }
 
 .sidebar ul li {
-  padding: 6px 0;
+  padding: 0.45rem 0;
   color: var(--muted);
   font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.sidebar ul li a {
+  color: var(--text);
+}
+
+.sidebar ul li::before {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin-right: 0.65rem;
+  background: var(--brand);
+  border-radius: 50%;
 }
 
 .sidebar ul li a {
@@ -149,12 +170,14 @@ body {
 }
 
 .sidebar .tag {
-  display:inline-block;
-  background: transparent;
-  color: var(--muted);
-  padding: 2px 6px;
-  border-radius: 6px;
-  font-size: 0.85rem;
+  display:inline-flex;
+  align-items:center;
+  background: rgba(37, 99, 235, 0.12);
+  color: #1d4ed8;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 0.82rem;
+  line-height: 1;
 }
 
 .sidebar .tech-stack {
@@ -248,6 +271,10 @@ body {
 }
 
 .card-grid > article {
+  min-height: 16rem;
+}
+
+.card-grid > article {
   height: 100%;
 }
 
@@ -291,9 +318,9 @@ body {
 .blog-intro {
   margin: 0 0 1.5rem;
   padding: 1.75rem;
-  border-radius: 0.75rem;
-  background: var(--brand-soft);
-  box-shadow: 0 6px 18px rgba(15,23,42,0.04);
+  border-radius: 1rem;
+  background: rgba(56, 189, 248, 0.16);
+  box-shadow: 0 12px 28px rgba(15,23,42,0.08);
 }
 
 .blog-intro h1{
