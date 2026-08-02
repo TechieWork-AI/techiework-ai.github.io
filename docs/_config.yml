@@ -49,6 +49,11 @@ author:
 paginate: 6
 paginate_path: "/blog/page:num/"
 
+search: true
+
+lunr:
+  search_within_pages: true
+
 # Build settings
 #remote_theme: pages-themes/architect
 #plugins:
