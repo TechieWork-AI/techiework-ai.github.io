@@ -15,6 +15,67 @@
 body {
   color: var(--text);
   line-height: 1.7;
+  background: var(--bg);
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+:root[data-theme="dark"] {
+  --brand: #60a5fa;
+  --brand-dark: #f8fafc;
+  --brand-soft: #1e293b;
+  --text: #e2e8f0;
+  --muted: #94a3b8;
+  --border: #334155;
+  --bg: #020617;
+  --surface: #0f172a;
+}
+
+:root {
+  --bg: #f8fafc;
+  --surface: #ffffff;
+}
+
+.page-shell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.site-header,
+.page-content,
+.site-footer__content {
+  width: min(1120px, calc(100% - 2rem));
+  margin: 0 auto;
+}
+
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.brand {
+  font-weight: 800;
+  color: var(--brand-dark);
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.site-nav {
+  display: flex;
+  gap: 1rem;
+}
+
+.site-nav a {
+  color: var(--muted);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.page-content {
+  flex: 1;
+  padding: 1rem 0 2rem;
 }
 
 .page__content {
@@ -102,11 +163,16 @@ body {
 
 .info-card,
 .post-card {
-  background: #fff;
+  background: var(--surface);
   border: 1px solid var(--border);
   border-radius: 1rem;
   padding: 1.25rem;
   box-shadow: 0 10px 24px rgba(15, 23, 42, 0.06);
+}
+
+.info-card a {
+  color: var(--brand-dark);
+  text-decoration: none;
 }
 
 .info-card h3,
@@ -169,6 +235,41 @@ body {
   font-size: 0.8rem;
 }
 
+.theme-toggle {
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  border-radius: 999px;
+  padding: 0.4rem 0.7rem;
+  cursor: pointer;
+}
+
+.site-footer {
+  margin-top: 2rem;
+  padding: 2rem 0;
+  border-top: 1px solid var(--border);
+  background: var(--surface);
+}
+
+.site-footer__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.site-footer__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.site-footer__links a {
+  color: var(--brand);
+  text-decoration: none;
+  font-weight: 600;
+}
+
 @media (max-width: 900px) {
   .site-hero {
     grid-template-columns: 1fr;
@@ -177,5 +278,15 @@ body {
 
   .card-grid {
     grid-template-columns: 1fr;
+  }
+
+  .site-header,
+  .site-footer__content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .site-nav {
+    flex-wrap: wrap;
   }
 }

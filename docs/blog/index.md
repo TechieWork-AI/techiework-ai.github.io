@@ -24,3 +24,17 @@ author_profile: false
     <p>See how .NET and Business Central can support practical business outcomes.</p>
   </article>
 </div>
+
+<div class="section-heading">
+  <h2>Recent posts</h2>
+</div>
+
+<div class="card-grid">
+  {% for post in site.posts %}
+    <article class="info-card">
+      <p class="post-card__meta">{{ post.date | date: "%b %d, %Y" }}</p>
+      <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+      <p>{{ post.excerpt | strip_html | truncate: 160 }}</p>
+    </article>
+  {% endfor %}
+</div>
