@@ -1,5 +1,7 @@
 source "https://rubygems.org"
 
+# Ensure required stdlib gems are available on newer Rubies
+gem "bigdecimal"
 gem "csv"
 gem "github-pages", group: :jekyll_plugins
 

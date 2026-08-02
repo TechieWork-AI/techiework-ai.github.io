@@ -21,7 +21,14 @@
       </header>
 
       <main class="page-content">
-        {{ content }}
+        <div class="page-grid">
+          <aside class="sidebar">
+            {% include sidebar.html %}
+          </aside>
+          <div class="content page__content">
+            {{ content }}
+          </div>
+        </div>
       </main>
 
       {% include site-footer.html %}
