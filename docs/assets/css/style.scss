@@ -525,3 +525,56 @@ h2{
     font-size: 1.25rem;
   }
 }
+
+// Styles for search results
+
+.site-search{
+    max-width:700px;
+    margin:20px auto;
+}
+
+#search-box{
+
+    width:100%;
+
+    padding:12px;
+
+    border-radius:8px;
+
+    border:1px solid #ddd;
+
+    font-size:16px;
+
+}
+
+.search-item{
+
+    padding:15px;
+
+    border-bottom:1px solid #ddd;
+
+}
+
+.search-item a{
+
+    font-size:18px;
+
+    text-decoration:none;
+
+}
+
+.meta{
+
+    color:#888;
+
+    font-size:13px;
+
+    margin-top:5px;
+
+}
+
+.search-item p{
+
+    margin-top:8px;
+
+}
