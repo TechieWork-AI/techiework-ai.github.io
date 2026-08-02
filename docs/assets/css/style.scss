@@ -17,6 +17,9 @@ body {
   line-height: 1.7;
   background: var(--bg);
   transition: background 0.2s ease, color 0.2s ease;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
 :root[data-theme="dark"] {
@@ -53,6 +56,8 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 1rem 0;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
 
 .brand {
@@ -65,6 +70,7 @@ body {
 .site-nav {
   display: flex;
   gap: 1rem;
+  flex-wrap: wrap;
 }
 
 .site-nav a {
@@ -86,7 +92,7 @@ body {
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 2rem;
-  padding: 2.5rem;
+  padding: clamp(1.25rem, 3vw, 2.5rem);
   margin: 1rem 0 2.5rem;
   background: linear-gradient(135deg, var(--brand-dark), #1d4ed8);
   color: #fff;
@@ -95,7 +101,7 @@ body {
 }
 
 .site-hero__content h1 {
-  font-size: clamp(2rem, 4vw, 3rem);
+  font-size: clamp(1.8rem, 4vw, 3rem);
   margin-bottom: 0.75rem;
   line-height: 1.15;
 }
@@ -159,6 +165,12 @@ body {
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1rem;
   margin-bottom: 2rem;
+}
+
+@media (max-width: 1024px) {
+  .card-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 .info-card,
@@ -273,7 +285,7 @@ body {
 @media (max-width: 900px) {
   .site-hero {
     grid-template-columns: 1fr;
-    padding: 1.5rem;
+    padding: 1.25rem;
   }
 
   .card-grid {
@@ -288,5 +300,48 @@ body {
 
   .site-nav {
     flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 15px;
+  }
+
+  .site-header,
+  .page-content,
+  .site-footer__content {
+    width: min(100% - 1rem, 1120px);
+  }
+
+  .hero-actions,
+  .site-footer__links {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+    padding: 0.85rem 1rem;
+  }
+
+  .blog-intro,
+  .cta-banner,
+  .info-card,
+  .post-card {
+    padding: 1rem;
+  }
+
+  .site-nav {
+    gap: 0.6rem;
+  }
+
+  .site-nav a {
+    font-size: 0.95rem;
+  }
+
+  .section-heading h2 {
+    font-size: 1.25rem;
   }
 }
