@@ -1,12 +1,15 @@
 ---
-layout: default
 title: About
+layout: single
 permalink: /about/
+author_profile: true
 ---
 
+# About Me
 
-## Welcome to another page
+Software Consultant specializing in
 
-_yay_
-
-[back](./)
+- AI
+- .NET
+- Business Central
+- Azure

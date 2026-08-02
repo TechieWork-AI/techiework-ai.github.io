@@ -23,15 +23,23 @@ email: Techie.Work@Outlook.com
 description: "Techie.Work : Code. Build. Run. Deliver. Results that drive your business."
 baseurl: ""
 
-theme: jekyll-theme-architect
 url: "https://techiework-ai.github.io"
 github_username:  techiework-ai
 
-permalink: /:categories/:year/:month/:day/:title/
+permalink: /blog/:categories/:year/:month/:day/:title/
+
+remote_theme: "mmistakes/minimal-mistakes"
 
 plugins:
+  - jekyll-include-cache
   - jekyll-feed
+  - jekyll-seo-tag
   - jekyll-sitemap
+
+author:
+  name: Ravi Jangid
+  bio: AI | .NET | IT Consultant
+  location: India
 
 # Build settings
 #remote_theme: pages-themes/architect

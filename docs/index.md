@@ -1,42 +1,19 @@
 ---
-layout: default
-title: Home
+layout: home
+author_profile: true
+title: Techie.Work
+header:
+  overlay_color: "#000"
+  teaser: /assets/images/banner.jpg
 ---
 
-<div class="hero">
+Welcome to **Techie.Work**
 
-# Techie.Work
+Helping businesses build AI-powered software using:
 
-### AI • .NET • Business Central • Cloud • Automation
-
-Helping businesses build modern software solutions.
-
-</div>
-
-<div class="page-grid">
-
-<div class="content">
-
-# Latest Articles
-
-{% for post in site.posts limit:10 %}
-
-<div class="post-card">
-
-## [{{ post.title }}]({{ post.url }})
-
-📅 {{ post.date | date: "%d %b %Y" }}
-
-{{ post.excerpt }}
-
-<a class="readmore" href="{{ post.url }}">Read More →</a>
-
-</div>
-
-{% endfor %}
-
-</div>
-
-{% include sidebar.html %}
-
-</div>
+- AI
+- .NET
+- Business Central
+- Azure
+- Python
+- Cloud
