@@ -20,7 +20,7 @@
 
 title: Techie.Work
 email: Techie.Work@Outlook.com
-description: "Techie.Work : Code. Build. Run. Deliver. Results that drive your business."
+description: "Code. Build. Run. Deliver. Results that drive your business."
 baseurl: ""
 
 url: "https://techiework-ai.github.io"
@@ -35,6 +35,9 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
+
+markdown: kramdown
+highlighter: rouge
 
 author:
   name: Ravi Jangid

@@ -21,14 +21,18 @@
       </header>
 
       <main class="page-content">
-        <div class="page-grid">
-          <aside class="sidebar">
-            {% include sidebar.html %}
-          </aside>
-          <div class="content page__content">
-            {{ content }}
+        {% if page.layout == "home" %}
+          {{ content }}
+        {% else %}
+          <div class="page-grid">
+            <aside class="sidebar">
+              {% include sidebar.html %}
+            </aside>
+            <div class="content page__content">
+              {{ content }}
+            </div>
           </div>
-        </div>
+        {% endif %}
       </main>
 
       {% include site-footer.html %}

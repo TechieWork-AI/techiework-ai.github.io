@@ -2,24 +2,12 @@
 layout: default
 ---
 
-<div class="page-grid">
-
-<div class="content">
-
 <h1>{{ page.title }}</h1>
 
 <p class="date">
-
-📅 {{ page.date | date: "%d %B %Y" }}
-
+  📅 {{ page.date | date: "%d %B %Y" }}
 </p>
 
 <hr>
 
 {{ content }}
-
-</div>
-
-{% include sidebar.html %}
-
-</div>
