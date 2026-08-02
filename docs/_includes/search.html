@@ -1,6 +1,15 @@
 <div class="site-search">
-  <input id="search-box" type="search" placeholder="Search ..." aria-label="Search" />
-  <div id="search-results" class="search-results" aria-live="polite"></div>
+
+    <input
+        id="search-box"
+        type="search"
+        placeholder="🔍 Search articles..."
+        autocomplete="off">
+
+    <div id="search-results"></div>
+
 </div>
 
-<script src="/assets/js/search.js" defer></script>
+<script src="https://unpkg.com/lunr/lunr.js"></script>
+<script src="/assets/js/lunr-store.js"></script>
+<script src="/assets/js/search.js"></script>
