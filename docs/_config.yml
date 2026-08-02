@@ -29,6 +29,10 @@ github_username:  techiework-ai
 
 permalink: /:categories/:year/:month/:day/:title/
 
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
 # Build settings
 #remote_theme: pages-themes/architect
 #plugins:

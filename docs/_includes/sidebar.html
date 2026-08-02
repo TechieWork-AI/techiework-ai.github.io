@@ -1,0 +1,89 @@
+<div class="sidebar">
+
+<h2>🔥 Latest Posts</h2>
+
+<ul>
+
+{% for post in site.posts limit:5 %}
+
+<li>
+
+<a href="{{ post.url }}">
+
+{{ post.title }}
+
+</a>
+
+</li>
+
+{% endfor %}
+
+</ul>
+
+<hr>
+
+<h2>📂 Categories</h2>
+
+<ul>
+
+{% assign categories = site.categories | sort %}
+
+{% for category in categories %}
+
+<li>
+
+{{ category[0] }}
+
+({{ category[1].size }})
+
+</li>
+
+{% endfor %}
+
+</ul>
+
+<hr>
+
+<h2>🏷 Tags</h2>
+
+<div class="tags">
+
+{% assign tags = site.tags | sort %}
+
+{% for tag in tags %}
+
+<span class="tag">
+
+{{ tag[0] }}
+
+</span>
+
+{% endfor %}
+
+</div>
+
+<hr>
+
+<h2>👨‍💻 Tech Stack</h2>
+
+<ul>
+
+<li>.NET</li>
+
+<li>C#</li>
+
+<li>Azure</li>
+
+<li>Business Central</li>
+
+<li>Python</li>
+
+<li>AI</li>
+
+<li>LangChain</li>
+
+<li>SQL Server</li>
+
+</ul>
+
+</div>
