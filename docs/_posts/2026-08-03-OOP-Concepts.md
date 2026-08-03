@@ -44,7 +44,7 @@ This makes the software easier to extend. If a new employee type (for example, I
 Once you understand these ideas, you'll notice that frameworks like ASP.NET Core, Entity Framework Core, and enterprise ERP systems such as Dynamics 365 Business Central are heavily built around OOP. Controllers, services, repositories, models, and dependency injection 𝐚𝐥𝐥 𝐫𝐞𝐥𝐲 𝐨𝐧 𝐭𝐡𝐞𝐬𝐞 𝐩𝐫𝐢𝐧𝐜𝐢𝐩𝐥𝐞𝐬 𝐭𝐨 𝐜𝐫𝐞𝐚𝐭𝐞 𝐦𝐚𝐢𝐧𝐭𝐚𝐢𝐧𝐚𝐛𝐥𝐞 𝐚𝐧𝐝 𝐬𝐜𝐚𝐥𝐚𝐛𝐥𝐞 𝐚𝐩𝐩𝐥𝐢𝐜𝐚𝐭𝐢𝐨𝐧𝐬.
 
 <!-- Standard Markdown format -->
-![Description of photo](assets/postsimages/OOPs.jpg)
+![OOPS Concepts](assets/postsimages/OOPs.jpg)
 
 
 💾 Save this & repost to help others ace Software & AI engineering.
