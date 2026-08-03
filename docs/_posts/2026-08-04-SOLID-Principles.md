@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Solid Principles"
-date: 2026-08-03
+date: 2026-08-04
 categories:
  - dotnet
 tags:

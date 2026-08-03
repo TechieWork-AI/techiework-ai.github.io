@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "OOPS Concepts"
-date: 2026-08-03
+title: "SOLID VS OOP"
+date: 2026-08-04
 categories:
  - dotnet
 tags:
