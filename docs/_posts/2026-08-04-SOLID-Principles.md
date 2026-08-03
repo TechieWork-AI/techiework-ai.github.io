@@ -47,21 +47,26 @@ Real Project (E-Commerce System)
 ▪️𝐒𝐑𝐏: OrderService, PaymentService, and NotificationService each have one responsibility.
 𝐖𝐇𝐀𝐓-- A class should have only one reason to change.
 𝐖𝐇𝐘-- Each person has one responsibility. Software should follow the same idea.
+
 ▪️𝐎𝐂𝐏: Add a new payment method by creating another implementation of IPayment.
 𝐖𝐇𝐀𝐓-- Don't change existing working code.
 𝐖𝐇𝐘-- Because changing working code may introduce bugs.
        Adding new code is safer than modifying existing code.
+
 ▪️𝐋𝐒𝐏: Any payment class (CardPayment, UpiPayment, etc.) can replace another wherever IPayment is expected.
 𝐖𝐇𝐀𝐓-- A child class should be able to replace its parent class without breaking the program.
 𝐖𝐇𝐘-- Your program should not fail simply because a child class replaces the parent.
+
 ▪️𝐈𝐒𝐏: Separate interfaces like IPayment, INotification, and IRefund prevent unnecessary methods.
 𝐖𝐇𝐀𝐓-- Don't force classes to implement methods they don't use.
 𝐖𝐇𝐘-- Smaller interfaces make code cleaner, easier to maintain, and less confusing.
+
 ▪️𝐃𝐈𝐏: OrderService depends on interfaces (IPayment, INotification), not concrete implementations.
 𝐖𝐇𝐀𝐓-- High-level modules should depend on abstractions (interfaces) rather than concrete classes.
 𝐖𝐇𝐘-- Because your business logic should not care which database, email provider, or payment gateway is used.
 
-![SOLID Concepts](/assets/images/posts/SOLIDPrincipleECommerce.png)
+
+![SOLID ECommerce Concepts](/assets/images/posts/SOLIDPrincipleECommerce.png)
 
 𝐁𝐞𝐧𝐞𝐟𝐢𝐭𝐬
 Large, difficult-to-maintain classes	   --->Small, focused classes
