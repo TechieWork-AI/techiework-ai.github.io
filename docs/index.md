@@ -87,7 +87,7 @@ header:
 </div>
 
 <div class="card-grid">
-  {% for post in site.posts limit:3 %}
+  {% for post in site.posts limit:6 %}
     <article class="info-card">
       <p class="post-card__meta">{{ post.date | date: "%b %d, %Y" }}</p>
       <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
