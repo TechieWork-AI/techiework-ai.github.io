@@ -47,7 +47,7 @@ author:
   location: India
 
 paginate: 6
-paginate_path: "/blog/page:num/"
+paginate_path: "/page:num/"
 
 search: true
 
