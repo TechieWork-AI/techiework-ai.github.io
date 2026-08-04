@@ -87,14 +87,21 @@ header:
 </div>
 
 <div class="card-grid">
-  {% for post in site.posts limit:6 %}
+  {% for post in paginator.posts %}
     <article class="info-card">
-      <p class="post-card__meta">{{ post.date | date: "%b %d, %Y" }}</p>
-      <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
-      <p>{{ post.excerpt | strip_html | truncate: 140 }}</p>
+      <p class="post-card__meta">
+        {{ post.date | date: "%b %d, %Y" }}
+      </p>
+      <h3>
+        <a href="{{ post.url | relative_url }}">
+          {{ post.title }}
+        </a>
+      </h3>
+      <p>{{ post.excerpt | strip_html | truncate: 160 }}</p>
     </article>
   {% endfor %}
 </div>
+
 
 <div class="cta-banner">
   <h2>Ready to build something impactful?</h2>
